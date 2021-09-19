@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+input, hr{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    height: 1px;
+    border: none;
+}
+
+button, nav-search-btn{
+    cursor: pointer;
+}
+
+/*///////////////////////////////////////////////////////////////////
+|                              Navbar                               |
+////////////////////////////////////////////////////////////////////*/
+.nav{
+    width: 100vw;
+    height: 9vh;
+    box-sizing: border-box;
+    padding-right: 1%;
+    padding-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.logo{
+    height: 100%;
+}
+
+.nav-input-container{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #C00;
+    border-radius: 3px;
+}
+.nav-input{
+    width: 25%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid #C00;
+}
+.input-icon{
+    height: 70%;
+}
+.input{
+    width: 60%;
+    height: 100%;
+    border: none;
+}
+.nav-search-btn{
+    height: 100%;
+    background-color: #C00;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.input-btn{
+    background-color: transparent;
+    color: #FFF;
+    font-size: 3vh;
+}
+
+.nav-link-container{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.round-card{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 1px 7px #C005;
+    border-radius: 50%;
+}
+.link-txt{
+    margin-left: 3px;
+    color: #C00;
+}
+.link-icon{
+    width: 66%;
+}
+.login-link{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/basic-thin-line-color/21/15_1-512.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.content{
+    margin-top: 9vh;
+    display: flex;
+}
+
+/*///////////////////////////////////////////////////////////////////
+|                               Filter                              |
+////////////////////////////////////////////////////////////////////*/
+.filter-container{
+    width: 20vw;
+    height: 91vh;
+    padding-top: 3vh;
+    border-right: 2px solid #C00;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 9vh;
+    left: 0;
+}
+.filter-item{
+    width: 70%;
+    margin-top: 7px;
+    color: #C00;
+}
+.filter-title{
+    font-size: 1.25em;
+}
+
+.price-range{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-input{
+    width: 40%;
+    height: 25px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding-left: 3%;
+    border: 1px solid #C009;
+    border-radius: 3px;
+}
+
+.fliter-hr{
+    width: 65%;
+    margin: 15px 15% 10px 0;
+    align-self: flex-end;
+    background-color: #AAA;
+}
+.f-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #C00;
+    background-image: url("https://hotelcard.it/wp-content/uploads/2018/04/left-arrow-2-e1523033429521.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.main-container{
+    width: 100%;
+    margin-left: 20vw;
+    padding: 2% 15px;
+}
+
+.link{
+    color: #666;
+}
+
+/*///////////////////////////////////////////////////////////////////
+|                               Rooms                               |
+////////////////////////////////////////////////////////////////////*/
+.rooms-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.room-object{
+    width: 100%;
+    height: 250px;
+    margin-top: 3%;
+    display: flex;
+}
+.room-object div{
+    flex: 1;
+}
+
+.room-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.room-img{
+    width: 100%;
+    min-height: 250px;
+}
+.tag{
+    padding: 2% 5%;
+    background-color: #C00;
+    color: #FFF;
+    position: relative;
+    top: -95%;
+    left: -40%;
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+.img-slider{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -35%;
+}
+.slider-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #FFFC;
+    border: none;
+    border-radius: 50%;
+    background-size: 70% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.prev{
+    background-image: url("Images/red\ arrow\ left.png");
+}
+.next{
+    background-image: url("Images/red\ arrow\ right.png");
+}
+
+.thumbnail-container{
+    padding: 0 5%;
+    height: 100%;
+    display: flex;
+}
+.thumbnail{
+    width: 25%;
+}
+
+
+.room-details{
+    padding-top: 1%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.room-title{
+    font-weight: normal;
+}
+
+.place-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.place-container div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C00;
+    font-weight: 600;
+}
+.place-icon{
+    width: 18px;
+}
+
+.rating-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating{    
+    max-width: 50px;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #590;
+    color: #FFF;
+    border-radius: 3px;
+}
+.star-icon{
+    width: 15px;
+}
+
+.speciality-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.speciality-icon{
+    width: 20px;
+}
+
+.feature-container{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-container span{
+    width: 42%;
+    padding: 1% 2%;
+    font-size: 9pt;
+    border: 1px solid #C00;
+}
+
+.rate-container{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.current-rate{
+    color: #C00;
+    font-size: 1.75rem;
+}
+.actual-rate{
+    text-decoration: line-through;
+}
+.off{
+    color: #FC0;
+}
+.grey{
+    color: #777;
+}
+
+.room-btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.room-btn{
+    width: 45%;
+    height: 36px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 2px solid #C00;
+}
+.primary-btn{
+    background-color: #C00;
+    color: #FFF;
+}
+.secondary-btn{
+    background-color: #FFF;
+    color: #C00;
+}
+
+.room-hr{
+    width: 100%;
+    height: 2px;
+    margin: 3% 0;
+    background-color: #C00;
+
+}
